@@ -27,6 +27,11 @@ export const getAll = () =>
 		.then(res => res.json())
 		.then(data => data)
 
+export const get = (id) =>
+	fetch(`${api}/posts/${id}`, { headers })
+		.then(res => res.json())
+		.then(data => data)
+
 export const add = (post) =>
 	fetch(`${api}/posts`, {
 		method: 'POST',
@@ -38,3 +43,8 @@ export const add = (post) =>
 	.then(res => res.json())
 	.then(data => data)
 
+/*-----------Comments-------------*/
+export const getByParent = (parentId) =>
+	fetch(`${api}/posts/${parentId}/comments`, { headers })
+		.then(res => res.json())
+		.then(data => data)
