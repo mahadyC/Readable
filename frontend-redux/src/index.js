@@ -11,7 +11,5 @@ import thunk from 'redux-thunk';
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
-console.log(store.getState())
-
 ReactDOM.render(<Provider store={store}><BrowserRouter basename="/"><App /></BrowserRouter></Provider>, document.getElementById('root'));
 registerServiceWorker();

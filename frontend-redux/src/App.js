@@ -315,17 +315,17 @@ class App extends Component {
               {(this.state.postFormVisible) ?
                 (<div className="formContainer">
                   <form onSubmit={this.handleSubmit}>
-                    <ul class="form-style">
+                    <ul className="form-style">
                       <li>
-                        <label>Title <span class="required">*</span></label>
+                        <label>Title <span className="required">*</span></label>
                         <input type="text" name="title" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Author <span class="required">*</span></label>
+                        <label>Author <span className="required">*</span></label>
                         <input type="text" name="author" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Body <span class="required">*</span></label>
+                        <label>Body <span className="required">*</span></label>
                         <textarea type="text" name="body" className="field-long field-textarea" onChange={this.handleChange} required/>
                       </li>
                       <li>
@@ -380,7 +380,7 @@ class App extends Component {
                         (<div className="formContainer">
                           <form onSubmit={(e)=> this.handleEditSubmit(e, post)}>
 
-                            <ul class="form-style">
+                            <ul className="form-style">
                               <li>
                                 <label>Title</label>
                                 <input type="text" name="editTitle" className="field-long" defaultValue={post.title} onChange={this.handleChange} required/>
@@ -451,7 +451,7 @@ class App extends Component {
                         (<div className="formContainer">
                           <form onSubmit={(e)=> this.handleEditSubmit(e, post)}>
 
-                            <ul class="form-style">
+                            <ul className="form-style">
                               <li>
                                 <label>Title</label>
                                 <input type="text" name="editTitle" className="field-long" defaultValue={post.title} onChange={this.handleChange} required/>
@@ -507,7 +507,7 @@ class App extends Component {
                                 (<div className="formContainer">
                                   <form onSubmit={(e)=> this.handleCommentEditSubmit(e, comment)}>
 
-                                    <ul class="form-style">
+                                    <ul className="form-style">
 
                                       <li>
                                         <label>Body</label>
@@ -531,13 +531,13 @@ class App extends Component {
                   {(this.state.commentFormVisible) ?
                     (<div className="formContainer">
                       <form onSubmit={(event) => this.commentSubmit(event, post.id)}>
-                        <ul class="form-style">
+                        <ul className="form-style">
                           <li>
-                            <label>Author <span class="required">*</span></label>
+                            <label>Author <span className="required">*</span></label>
                             <input type="text" name="commentAuthor" className="field-long" onChange={this.handleChange} required/>
                           </li>
                           <li>
-                            <label>Body <span class="required">*</span></label>
+                            <label>Body <span className="required">*</span></label>
                             <textarea type="text" name="commentBody" className="field-long field-textarea" onChange={this.handleChange} required/>
                           </li>
 
@@ -570,17 +570,17 @@ class App extends Component {
               {(this.state.postFormVisible) ?
                 (<div className="formContainer">
                   <form onSubmit={this.handleSubmit}>
-                    <ul class="form-style">
+                    <ul className="form-style">
                       <li>
-                        <label>Title <span class="required">*</span></label>
+                        <label>Title <span className="required">*</span></label>
                         <input type="text" name="title" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Author <span class="required">*</span></label>
+                        <label>Author <span className="required">*</span></label>
                         <input type="text" name="author" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Body <span class="required">*</span></label>
+                        <label>Body <span className="required">*</span></label>
                         <textarea type="text" name="body" className="field-long field-textarea" onChange={this.handleChange} required/>
                       </li>
                       <li>
@@ -635,14 +635,14 @@ class App extends Component {
                         (<div className="formContainer">
                           <form onSubmit={(e)=> this.handleEditSubmit(e, post)}>
 
-                            <ul class="form-style">
+                            <ul className="form-style">
                               <li>
-                                <label>Title</label>
+                                <label>Title<span className="required">*</span></label>
                                 <input type="text" name="editTitle" className="field-long" defaultValue={post.title} onChange={this.handleChange} required/>
                               </li>
 
                               <li>
-                                <label>Body</label>
+                                <label>Body<span className="required">*</span></label>
                                 <textarea type="text" name="editBody" className="field-long field-textarea" defaultValue={post.body}  onChange={this.handleChange} required/>
                               </li>
 
@@ -675,17 +675,17 @@ class App extends Component {
               {(this.state.postFormVisible) ?
                 (<div className="formContainer">
                   <form onSubmit={this.handleSubmit}>
-                    <ul class="form-style">
+                    <ul className="form-style">
                       <li>
-                        <label>Title <span class="required">*</span></label>
+                        <label>Title <span className="required">*</span></label>
                         <input type="text" name="title" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Author <span class="required">*</span></label>
+                        <label>Author <span className="required">*</span></label>
                         <input type="text" name="author" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Body <span class="required">*</span></label>
+                        <label>Body <span className="required">*</span></label>
                         <textarea type="text" name="body" className="field-long field-textarea" onChange={this.handleChange} required/>
                       </li>
                       <li>
@@ -738,14 +738,14 @@ class App extends Component {
                         (<div className="formContainer">
                           <form onSubmit={(e)=> this.handleEditSubmit(e, post)}>
 
-                            <ul class="form-style">
+                            <ul className="form-style">
                               <li>
-                                <label>Title</label>
+                                <label>Title<span className="required">*</span></label>
                                 <input type="text" name="editTitle" className="field-long" defaultValue={post.title} onChange={this.handleChange} required/>
                               </li>
 
                               <li>
-                                <label>Body</label>
+                                <label>Body<span className="required">*</span></label>
                                 <textarea type="text" name="editBody" className="field-long field-textarea" defaultValue={post.body}  onChange={this.handleChange} required/>
                               </li>
 
@@ -778,17 +778,17 @@ class App extends Component {
               {(this.state.postFormVisible) ?
                 (<div className="formContainer">
                   <form onSubmit={this.handleSubmit}>
-                    <ul class="form-style">
+                    <ul className="form-style">
                       <li>
-                        <label>Title <span class="required">*</span></label>
+                        <label>Title <span className="required">*</span></label>
                         <input type="text" name="title" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Author <span class="required">*</span></label>
+                        <label>Author <span className="required">*</span></label>
                         <input type="text" name="author" className="field-long" onChange={this.handleChange} required/>
                       </li>
                       <li>
-                        <label>Body <span class="required">*</span></label>
+                        <label>Body <span className="required">*</span></label>
                         <textarea type="text" name="body" className="field-long field-textarea" onChange={this.handleChange} required/>
                       </li>
                       <li>
@@ -842,14 +842,14 @@ class App extends Component {
                         (<div className="formContainer">
                           <form onSubmit={(e)=> this.handleEditSubmit(e, post)}>
 
-                            <ul class="form-style">
+                            <ul className="form-style">
                               <li>
-                                <label>Title</label>
+                                <label>Title<span className="required">*</span></label>
                                 <input type="text" name="editTitle" className="field-long" defaultValue={post.title} onChange={this.handleChange} required/>
                               </li>
 
                               <li>
-                                <label>Body</label>
+                                <label>Body<span className="required">*</span></label>
                                 <textarea type="text" name="editBody" className="field-long field-textarea" defaultValue={post.body}  onChange={this.handleChange} required/>
                               </li>
 
