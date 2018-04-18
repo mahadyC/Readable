@@ -34,7 +34,6 @@ class App extends Component {
     editPostId: "",
     editTitle: "",
     editBody: "",
-    comments: [],
     sortOption: "",
     commentFormVisible:false,
     commentAuthor: "",
